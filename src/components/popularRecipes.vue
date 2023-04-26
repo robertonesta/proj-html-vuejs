@@ -1,5 +1,5 @@
 <template>
-    <div class="popularRecipes_section container">
+    <div class="popularRecipes_section container my-5">
         <div class="popularRecipes_title text-center py-3">
             <h5 class="text-uppercase">popular recipes</h5>
             <span>Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.</span>
