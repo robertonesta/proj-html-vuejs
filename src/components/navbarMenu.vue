@@ -1,5 +1,5 @@
 <template>
-    <nav class="container d-flex justify-content-around py-3 ">
+    <nav class="d-flex py-4 text-center">
             <ul class="d-flex list-unstyled gap-5">
                 <li><a href="">Home</a></li>
                 <li><a href="">Recipes</a></li>
@@ -25,6 +25,11 @@ export default {
 
 <style lang="scss" scoped>
 nav{
+    ul{
+        justify-content: space-around;
+        margin: auto;
+        width: 60%;
+    }
     a{
         text-decoration: none;
         color: black;
