@@ -42,6 +42,7 @@ export default {
 .foodiejournal_section{
     background-color: white;
     margin-top: -3rem;
+    margin-bottom: 5rem;
     .stick{
     width: 34rem;
     height: 1px;

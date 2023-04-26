@@ -39,7 +39,6 @@ export default {
         .jumbo_pin{
             padding: 0 1rem;
             margin-top: -3rem;
-            transform: translate(0%, -0%);
             background-color: #fc7525;
             color:white;
             h6{
