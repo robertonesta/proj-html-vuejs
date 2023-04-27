@@ -6,6 +6,7 @@
         <culinaryCollection/>
         <farmToTable/>
         <SubscriptionComponent/>
+        <picturesComponent/>
 
     </main>
 </template>
@@ -17,6 +18,7 @@ import popularRecipes from "./popularRecipes.vue"
 import culinaryCollection from "./culinaryCollection.vue"
 import farmToTable from "./FarmToTable.vue"
 import SubscriptionComponent from "./subscriptionComponent.vue"
+import picturesComponent from "./picturesComponent.vue"
 export default {
     name: "appMain",
     components: {
@@ -25,7 +27,8 @@ export default {
     popularRecipes,
     culinaryCollection,
     farmToTable,
-    SubscriptionComponent
+    SubscriptionComponent,
+    picturesComponent,
 },
     setup () {
         
