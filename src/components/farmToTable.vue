@@ -94,10 +94,10 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="ad_card  d-flex justify-content-center text-center position-relative">
+                    <div class="ad_card d-flex justify-content-center text-center position-relative">
                         <img src="../assets/img/ad-bg.jpg" class="w-100" alt="">
                         <div class="ad_text position-absolute">
-                            <h4 class="text-uppercase ">View our latest recipes</h4>                 
+                            <h4 class="text-uppercase">View our latest recipes</h4>                 
                         </div>
                     </div>
                 </div>
@@ -127,11 +127,11 @@ export default {
     .load_button{
         background-color: #afafaf;
     }
-    .ad_text{
-       h5{
-        top: 20%;
-        right: 50%;
-       }
-    }
 }
+.ad_text{
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 40%;
+    }
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <div>
-
+    <div class="contacts">
+        <div class="container"></div>
     </div>
 </template>
 
