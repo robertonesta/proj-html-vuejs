@@ -5,7 +5,7 @@
             <h6 class="text-uppercase mx-3">Foodie Journal</h6>
             <div class="stick"></div>
         </div>
-        <div class="d-flex text-center justify-content-around py-1">        
+        <div class="d-flex text-center justify-content-around">      
             <div class="row">
                 <div class="col-4">
                     <img src="../assets/img/single-post-img3-400x263.jpg" alt="">

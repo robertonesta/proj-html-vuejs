@@ -16,9 +16,9 @@
         <div class="d-flex justify-content-around py-3">
             <div class="row">
                 <div class="col-8">
-                    <div class="left_pR bg-light flex-column">                        
+                    <div class="left_fTT bg-light flex-column">                        
                             <img src="../assets/img/single-post-img3-1200x790.jpg" class="w-100" alt="">                        
-                            <div class="left_pR_text flex-column py-4">
+                            <div class="fTT_text flex-column py-4">
                                 <div class="text-center">
                                     <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
                                     <span>By admin | March 25th, 2019</span>
@@ -33,38 +33,70 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="../assets/img/single-post-img3-400x263.jpg" alt="">
-                                <h6>Food Corner: Top Japanese Restaurants for Sushi</h6>
-                                <p>By Admin | March 25th, 2019</p>
+                    <div class="container text-center py-3">
+                        <div class="row row-cols-2">
+                            <div class="col my-3 bg-light">
+                                <div class="box">
+                                    <img src="../assets/img/fi-roundup-400x263.jpg" class="w-100" alt="">
+                                    <div class="fTT_text p-3">
+                                        <h5>Roundup: My New Favourite Recipes for Healthy Living</h5>
+                                        <p>By Admin | March 25th, 2019</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <img src="../assets/img/fi-roundup-400x263.jpg" alt="">
-                                <h6>Roundup: My New Favourite Recipes for Healthy Living</h6>
-                                <p>By Admin | March 25th, 2019</p>
+                            <div class="col my-3 bg-light">
+                                <div class="box">
+                                    <img src="../assets/img/fi-korean-food-400x263.jpg" class="w-100" alt="">
+                                    <div class="fTT_text p-3">
+                                        <h5>Meal Prep: Korean Bibimbap with Kimchi</h5>
+                                        <p>By Admin | March 25th, 2019</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <img src="../assets/img/fi-toasts-400x263.jpg" alt="">
-                                <h6>Why These Toasts with Tea are New Favourite</h6>
-                                <p>By Admin | March 25th, 2019</p>
+                            <div class="col my-3 bg-light">
+                                <div class="box">
+                                    <img src="../assets/img/fi-toasts-400x263.jpg" class="w-100" alt="">
+                                    <div class="fTT_text p-3">
+                                        <h5>Why These Toasts with Tea are New Favourite</h5>
+                                        <p>By Admin | March 25th, 2019</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <img src="../assets/img/single-post-img3-400x263.jpg" alt="">
-                                <h6>Food Corner: Top Japanese Restaurants for Sushi</h6>
-                                <p>By Admin | March 25th, 2019</p>
+                            <div class="col my-3 bg-light">
+                                <div class="box">
+                                    <img src="../assets/img/fi-street-food-400x263.jpg" class="w-100" alt="">
+                                    <div class="fTT_text p-3">
+                                        <h5>Exploring Street Food in Bangkok</h5>
+                                        <p>By Admin | March 25th, 2019</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <img src="../assets/img/fi-roundup-400x263.jpg" alt="">
-                                <h6>Roundup: My New Favourite Recipes for Healthy Living</h6>
-                                <p>By Admin | March 25th, 2019</p>
+                            <div class="col my-3 bg-light">
+                                <div class="box">
+                                    <img src="../assets/img/fi-organic-breakfast-400x263.jpg" class="w-100" alt="">
+                                    <div class="fTT_text p-3">
+                                        <h5>Organic Choices for Healthier Living</h5>
+                                        <p>By Admin | March 25th, 2019</p>    
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <img src="../assets/img/fi-toasts-400x263.jpg" alt="">
-                                <h6>Why These Toasts with Tea are New Favourite</h6>
-                                <p>By Admin | March 25th, 2019</p>
-                            </div>                            
+                            <div class="col my-3 bg-light">
+                                <div class="box">
+                                    <img src="../assets/img/fi-water-side-rest-400x263.jpg" class="w-100" alt="">
+                                    <div class="fTT_text p-3">
+                                        <h5>5 Waterside Restaurants in Istanbul for Special Events</h5>
+                                        <p>By Admin | March 25th, 2019</p>
+                                    </div>
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="ad_card  d-flex justify-content-center text-center position-relative">
+                        <img src="../assets/img/ad-bg.jpg" class="w-100" alt="">
+                        <div class="ad_text position-absolute">
+                            <h5 class="text-uppercase">View our latest recipes</h5>                 
                         </div>
                     </div>
                 </div>
@@ -91,8 +123,11 @@ export default {
         border: none;
         background-color: #fc7525;
     }
-    .col-6{
-        background-color: white;
+    .ad_text{
+       h5{
+        top: 20%;
+        right: 50%;
+       }
     }
 }
 
