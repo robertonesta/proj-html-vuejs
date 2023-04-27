@@ -23,7 +23,6 @@ export default {
                 <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
                 <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
             </ul>
-            
         </div>
     </div>
 </template>

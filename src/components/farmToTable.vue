@@ -94,12 +94,95 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="ad_card d-flex justify-content-center text-center position-relative">
+                    <div class="ad_card mb-3 d-flex justify-content-center text-center position-relative">
                         <img src="../assets/img/ad-bg.jpg" class="w-100" alt="">
                         <div class="ad_text position-absolute">
                             <h4 class="text-uppercase">View our latest recipes</h4>                 
                         </div>
                     </div>
+                    <div class="ad_card mb-3 d-flex flex-column justify-content-center text-center position-relative">
+                        <img src="../assets/img/singapore-featured-image-400x263.jpg" class="w-100" alt="">
+                        <div class="Singapore_text position-absolute">
+                            <h4 class="text-light">City Guide: Singapore</h4>
+                        </div>
+                        <button class="city_guides border-0 text-light py-2 text-uppercase"><i class="fa-solid fa-earth-americas"></i> View all city guides</button>                 
+                    </div>
+                    <hr>
+                    <div class="input-group my-3">
+                        <span class="input-group-text px-1 border-end-0" id="search_icon">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="search" class="form-control border-start-0 search_bg" placeholder="Search...">
+                    </div>
+                    <div>
+                        <h6 class="orange_text">Follow Us</h6>
+                        <div class="socials_right">
+                            <ul class="d-flex list-unstyled gap-3 my-3">
+                                <li class="btn"><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
+                                <li class="btn"><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                                <li class="btn"><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
+                                <li class="btn"><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex py-3">
+                        <button class="popular bg-light w-50 py-3">Popular</button>
+                        <button class="recent w-50">Recent</button>
+                    </div>
+                    <!--<div class="users">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div v-show="contact.visible" @click="chatUserClick(index)" v-for="(contact, index) in contacts" :class="index === activeContact ? 'active' : ''" class="chat_user p-3 align-items-center">
+                                    <div class="userImg">
+                                        <img :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
+                                    </div>
+                                    <div class="mx-2 d-flex flex-column flex-grow-1">
+                                        <div class="text">{{contact.name}}</div>
+                                        <span class="grey_text">{{lastMessage(contact)}}</span>
+                                    </div> 
+                                    <span class="grey_text">{{lastDate(contact)}}</span>                 
+                                </div>                                
+                            </li>
+                        </ul>
+                    </div>-->
+                    <div class="popular_posts">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="p-2 align-items-center d-flex">
+                                    <div class="postImg">
+                                        <img src="../assets/img/single-post-img3-150x150.jpg" alt="">
+                                    </div>
+                                    <div class="mx-2 d-flex flex-column flex-grow-1">
+                                        <div class="text"><p>Food Corner: Top Japanese Restaurants for Sushi</p></div>
+                                        <span>March 25th, 2019</span>
+                                    </div>                  
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="p-2 align-items-center d-flex">
+                                    <div class="postImg">
+                                        <img src="../assets/img/singapore-featured-image-150x150.jpg" alt="">
+                                    </div>
+                                    <div class="mx-2 d-flex flex-column flex-grow-1">
+                                        <div class="text"><p>City Guide: Singapore</p></div>
+                                        <span>March 25th, 2019</span>
+                                    </div>                  
+                                </div>                                
+                            </li>
+                            <li>
+                                <div class="p-2 align-items-center d-flex">
+                                    <div class="postImg">
+                                        <img src="../assets/img/slide1-bg-150x150.jpg" alt="">
+                                    </div>
+                                    <div class="mx-2 d-flex flex-column flex-grow-1">
+                                        <div class="text"><p>6 Nutritional Tips to Helf Burn Body Fat</p></div>
+                                        <span>March 25th, 2019</span>
+                                    </div>                  
+                                </div>                                
+                            </li>
+                        </ul>
+                    </div>
+                    <tweetCard/>
                 </div>
             </div>
         </div>
@@ -107,8 +190,12 @@
 </template>
 
 <script>
+import tweetCard from "./tweetCard.vue"
 export default {
     name: "farmToTable",
+    components: {
+        tweetCard,
+    },
     setup () {
         
 
@@ -134,4 +221,33 @@ export default {
         transform: translate(50%, -50%);
         width: 40%;
     }
+.Singapore_text{
+    top: 50%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.718);
+    padding: 0.75rem 1.5rem;
+}
+.city_guides{
+    background-color: #fc7525;
+}
+.orange_text{
+    color:#fc7525;
+}
+.socials_right{
+    li{
+        border: 1px solid #afafaf;
+        background-color: #efe7e7;
+    }
+}
+.popular, .recent{
+    border: 1px solid #afafaf;
+    font-size: 1.2rem;
+}
+.popular_posts{
+    img{
+        border-radius: 50%;
+        width: 55px;
+    }
+}
+
 </style>
