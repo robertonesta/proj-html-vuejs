@@ -1,7 +1,7 @@
 <template>
     <div class="farmToTable_section container d-flex justify-content-between">
         <div class="farm_title">
-            <h5 class="text-uppercase py-2">popular recipes</h5>
+            <h5 class="text-uppercase py-2">farm to table</h5>
             <div class="row">
                 <div class="col-9">
                     <span>Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.</span>
