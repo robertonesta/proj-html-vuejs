@@ -9,7 +9,10 @@ import footerTop from './footerTop.vue';
 import footerBottom from './footerBottom.vue';
 export default {
     name: "appFooter",
-    components: "footerTop, footerBottom",
+    components: {
+        footerTop, footerBottom,
+    },
+
     setup () {
         
 
