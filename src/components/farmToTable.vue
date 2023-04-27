@@ -94,13 +94,13 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="ad_card mb-3 d-flex justify-content-center text-center position-relative">
+                    <div class="ad_card mb-5 d-flex justify-content-center text-center position-relative">
                         <img src="../assets/img/ad-bg.jpg" class="w-100" alt="">
                         <div class="ad_text position-absolute">
                             <h4 class="text-uppercase">View our latest recipes</h4>                 
                         </div>
                     </div>
-                    <div class="ad_card mb-3 d-flex flex-column justify-content-center text-center position-relative">
+                    <div class="ad_card mb-5 d-flex flex-column justify-content-center text-center position-relative">
                         <img src="../assets/img/singapore-featured-image-400x263.jpg" class="w-100" alt="">
                         <div class="Singapore_text position-absolute">
                             <h4 class="text-light">City Guide: Singapore</h4>
@@ -108,7 +108,7 @@
                         <button class="city_guides border-0 text-light py-2 text-uppercase"><i class="fa-solid fa-earth-americas"></i> View all city guides</button>                 
                     </div>
                     <hr>
-                    <div class="input-group my-3">
+                    <div class="input-group my-5">
                         <span class="input-group-text px-1 border-end-0" id="search_icon">
                           <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
