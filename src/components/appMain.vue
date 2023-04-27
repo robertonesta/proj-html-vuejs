@@ -5,6 +5,7 @@
         <popularRecipes/>
         <culinaryCollection/>
         <farmToTable/>
+        <SubscriptionComponent/>
 
     </main>
 </template>
@@ -15,15 +16,17 @@ import foodieJournal from "./foodieJournal.vue"
 import popularRecipes from "./popularRecipes.vue"
 import culinaryCollection from "./culinaryCollection.vue"
 import farmToTable from "./FarmToTable.vue"
+import SubscriptionComponent from "./subscriptionComponent.vue"
 export default {
     name: "appMain",
     components: {
-        jumboTron,
-        foodieJournal,
-        popularRecipes,
-        culinaryCollection,
-        farmToTable,
-    },
+    jumboTron,
+    foodieJournal,
+    popularRecipes,
+    culinaryCollection,
+    farmToTable,
+    SubscriptionComponent
+},
     setup () {
         
 

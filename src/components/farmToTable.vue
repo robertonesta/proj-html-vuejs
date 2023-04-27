@@ -34,8 +34,8 @@
                             </div>
                     </div>
                     <div class="container text-center py-3">
-                        <div class="row row-cols-2">
-                            <div class="col my-3 bg-light">
+                        <div class="row ">
+                            <div class="col-6 my-3 bg-light">
                                 <div class="box">
                                     <img src="../assets/img/fi-roundup-400x263.jpg" class="w-100" alt="">
                                     <div class="fTT_text p-3">
@@ -44,7 +44,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col my-3 bg-light">
+                            <div class="col-6 my-3 bg-light">
                                 <div class="box">
                                     <img src="../assets/img/fi-korean-food-400x263.jpg" class="w-100" alt="">
                                     <div class="fTT_text p-3">
@@ -53,7 +53,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col my-3 bg-light">
+                            <div class="col-6 my-3 bg-light">
                                 <div class="box">
                                     <img src="../assets/img/fi-toasts-400x263.jpg" class="w-100" alt="">
                                     <div class="fTT_text p-3">
@@ -62,7 +62,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col my-3 bg-light">
+                            <div class="col-6 my-3 bg-light">
                                 <div class="box">
                                     <img src="../assets/img/fi-street-food-400x263.jpg" class="w-100" alt="">
                                     <div class="fTT_text p-3">
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col my-3 bg-light">
+                            <div class="col-6 my-3 bg-light">
                                 <div class="box">
                                     <img src="../assets/img/fi-water-side-rest-400x263.jpg" class="w-100" alt="">
                                     <div class="fTT_text p-3">
@@ -88,7 +88,8 @@
                                         <p>By Admin | March 25th, 2019</p>
                                     </div>
                                 </div>
-                            </div>                             
+                            </div> 
+                            <button class="load_button border-0 text-uppercase "><strong>Load more posts</strong></button>                            
                         </div>
                     </div>
                 </div>
@@ -96,7 +97,7 @@
                     <div class="ad_card  d-flex justify-content-center text-center position-relative">
                         <img src="../assets/img/ad-bg.jpg" class="w-100" alt="">
                         <div class="ad_text position-absolute">
-                            <h5 class="text-uppercase">View our latest recipes</h5>                 
+                            <h4 class="text-uppercase ">View our latest recipes</h4>                 
                         </div>
                     </div>
                 </div>
@@ -118,10 +119,13 @@ export default {
 
 <style lang="scss" scoped>
 .farmToTable_section{
-    margin: 2rem auto;
+    margin: 3rem auto;
     .btn{
         border: none;
         background-color: #fc7525;
+    }
+    .load_button{
+        background-color: #afafaf;
     }
     .ad_text{
        h5{
@@ -130,6 +134,4 @@ export default {
        }
     }
 }
-
-
 </style>
