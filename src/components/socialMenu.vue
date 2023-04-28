@@ -19,10 +19,7 @@ export default {
         </div>
         <div class="socials_right">
             <ul class="d-flex list-unstyled gap-3 my-3">
-                <li><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
-                <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
-                <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
-                <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+                <li v-for="app in store.apps"><a :href="app.path"></a><font-awesome-icon :icon="app.social"/></li>
             </ul>
         </div>
     </div>

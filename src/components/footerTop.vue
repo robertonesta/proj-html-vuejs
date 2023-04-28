@@ -6,10 +6,7 @@
                     <img src="../assets/img/avada-food-logo-mob-2x.png" class="w-100" alt="">
                     <div class="socials_right">
                         <ul class="d-flex list-unstyled gap-3 my-3">
-                            <li class="btn"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                            <li class="btn"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="btn"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li class="btn"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            <li class="btn" v-for="app in store.apps"><a :href="app.path"></a><font-awesome-icon :icon="app.social"/></li>
                         </ul>
                     </div>
                 </div>

@@ -77,22 +77,27 @@ export const store = reactive({
             name: "Contact",
             path: "#"
         },
-    ],
+    ], 
     apps: [
       {
-        socials: "facebook"
+        social: "fa-brands fa-facebook",
+        path: "#"
       }, 
       {
-        socials: "instagram"
+        social: "fa-brands fa-instagram",
+        path: "#"
       }, 
       {
-        socials: "twitter"
+        social: "fa-brands fa-twitter",
+        path: "#"
       }, 
       {
-        socials: "youtube"
+        social: "fa-brands fa-youtube",
+        path: "#"
       },
       {
-        socials: "pinterest"
+        social: "fa-brands fa-pinterest",
+        path: "#"
       },  
     ],
     recipes: [

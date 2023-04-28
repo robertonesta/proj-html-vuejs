@@ -73,10 +73,7 @@
                         <h6 class="orange_text">Follow Us</h6>
                         <div class="socials_right">
                             <ul class="d-flex list-unstyled gap-3 my-3">
-                                <li class="btn"><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
-                                <li class="btn"><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
-                                <li class="btn"><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
-                                <li class="btn"><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+                                <li class="border-none" v-for="app in store.apps"><a :href="app.path"></a><font-awesome-icon :icon="app.social"/></li>
                             </ul>
                         </div>
                     </div>
@@ -153,8 +150,8 @@ export default {
 }
 .socials_right{
     li{
-        border: 1px solid #afafaf;
-        background-color: #efe7e7;
+        border: none;
+        background-color: transparent;
     }
 }
 .popular, .recent{
