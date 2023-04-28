@@ -1,8 +1,9 @@
 <script>
+import {store} from "../assets/data/store";
 export default {
     name: "socialMenu",
     setup () {
-        return {}
+        return {store}
     }
 }
 </script>

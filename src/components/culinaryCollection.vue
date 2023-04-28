@@ -1,10 +1,11 @@
 <script>
+import {store} from "../assets/data/store";
 export default {
     name: "culinaryCollection",
     setup () {
         
 
-        return {}
+        return {store}
     }
 }
 </script>

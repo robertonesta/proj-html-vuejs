@@ -1,4 +1,5 @@
 <script>
+import {store} from "./assets/data/store"
 import AppHeader from "./components/appHeader.vue"
 import AppMain from "./components/appMain.vue"
 import AppFooter from "./components/appFooter.vue"
@@ -11,8 +12,7 @@ export default{
         
     },
     data(){
-        return{
-        }
+        return{store}
     }
 }
 </script>

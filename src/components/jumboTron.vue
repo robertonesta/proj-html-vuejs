@@ -19,12 +19,13 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 export default {
     name: "jumboTron",
     setup () {
         
 
-        return {}
+        return {store}
     }
 }
 </script>

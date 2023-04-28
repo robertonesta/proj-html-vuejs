@@ -190,6 +190,7 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 import tweetCard from "./tweetCard.vue"
 export default {
     name: "farmToTable",
@@ -199,7 +200,7 @@ export default {
     setup () {
         
 
-        return {}
+        return {store}
     }
 }
 </script>

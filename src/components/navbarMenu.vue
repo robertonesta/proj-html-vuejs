@@ -13,12 +13,13 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 export default {
     name: "navbarMenu",
     setup () {
         
 
-        return {}
+        return {store}
     }
 }
 </script>

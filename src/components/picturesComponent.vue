@@ -12,12 +12,13 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 export default {
     name: "picturesComponent",
     setup () {
         
 
-        return {}
+        return {store}
     }
 }
 </script>

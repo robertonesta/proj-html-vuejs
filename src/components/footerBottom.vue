@@ -9,10 +9,11 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 export default {
     name: "footerBottom",
     setup () {
-        return {}
+        return {store}
     }
 }
 </script>

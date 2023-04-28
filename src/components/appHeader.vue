@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 import socialMenu from "./socialMenu.vue"
 import navbarMenu from "./navbarMenu.vue"
 export default {
@@ -18,7 +19,7 @@ export default {
     },
     name: "appHeader",
     setup () {
-        return {}
+        return {store}
     }
 }
 </script>

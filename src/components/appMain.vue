@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 import jumboTron from "./jumboTron.vue"
 import foodieJournal from "./foodieJournal.vue"
 import popularRecipes from "./popularRecipes.vue"
@@ -33,7 +34,7 @@ export default {
     setup () {
         
 
-        return {}
+        return {store}
     }
 }
 </script>

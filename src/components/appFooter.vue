@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 import footerTop from './footerTop.vue';
 import footerBottom from './footerBottom.vue';
 export default {
@@ -14,9 +15,7 @@ export default {
     },
 
     setup () {
-        
-
-        return {}
+        return {store}
     }
 }
 </script>

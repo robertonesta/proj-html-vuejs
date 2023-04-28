@@ -16,12 +16,13 @@
 </template>
 
 <script>
+import {store} from "../assets/data/store";
 export default {
     name: "subscriptionComponent",
     setup () {
         
 
-        return {}
+        return {store}
     }
 }
 </script>
