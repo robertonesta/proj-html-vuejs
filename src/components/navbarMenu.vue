@@ -11,7 +11,7 @@
 import {store} from "../assets/data/store";
 export default {
     name: "navbarMenu",
-    setup () {
+    data () {
         
 
         return {store}

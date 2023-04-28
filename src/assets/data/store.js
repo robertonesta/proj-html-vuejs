@@ -155,5 +155,40 @@ export const store = reactive({
             image: "r-brooke-lark-96398-unsplash-min-460x295.jpg",
             article: "Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id diam. Vivamus tincidunt eros sed ligula ultricies tincidunt sit amet at mi.",
         },
+    ],
+    culinary_collection: [
+        {
+            image: "drinks-recipes.png",
+            title: "Drinks"
+        },
+        {
+            image: "soups-recipes.png",
+            title: "Soup"
+        },
+        {
+            image: "baking-recipes.png",
+            title: "Bakery"
+        },
+        {
+            image: "dinner-recipes.png",
+            title: "Dinner"
+        },
+        {
+            image: "healthy-recipes.png",
+            title: "Healthy"
+        },
+        {
+            image: "staff-picks.png",
+            title: "Staff Picks"
+        },
+        {
+            image: "premium-recipes.png",
+            title: "Appetisers"
+        },
+        {
+            image: "quick-easy-recipes.png",
+            title: "Quick & Easy"
+        },
+
     ]
 })

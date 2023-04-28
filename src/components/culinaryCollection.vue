@@ -18,53 +18,11 @@ export default {
         </div>
         <div class="d-flex justify-content-around py-1">
             <div class="row row-cols-4">
-                <div class="col px-2 py-1">
+                <div class="col px-2 py-1" v-for="recipe in store.culinary_collection">
                     <div class="box">
-                        <img src="../assets/img/drinks-recipes.png" alt="">
-                        <span class="text-uppercase">drinks</span>
+                        <img :src="`${store.image_path}${recipe.image}`" alt="">
+                        <span class="text-uppercase">{{recipe.title}}</span>
                     </div>
-                </div>
-                <div class="col px-2 py-1">
-                    <div class="box">
-                        <img src="../assets/img/soups-recipes.png" alt="">
-                        <span class="text-uppercase">soup</span>
-                    </div>
-                </div>
-                <div class="col px-2 py-1">
-                    <div class="box">
-                        <img src="../assets/img/baking-recipes.png" alt="">
-                        <span class="text-uppercase">bakery</span>
-                    </div>
-                </div>
-                <div class="col px-2 py-1">
-                    <div class="box">
-                        <img src="../assets/img/dinner-recipes.png" alt="">
-                        <span class="text-uppercase">dinner</span>
-                    </div>
-                </div>
-                <div class="col px-2 py-1">
-                    <div class="box">
-                        <img src="../assets/img/healthy-recipes.png" alt="">
-                        <span class="text-uppercase">healthy</span>
-                    </div>
-                </div>
-                <div class="col px-2 py-1">
-                    <div class="box">
-                        <img src="../assets/img//staff-picks.png" alt="">
-                        <span class="text-uppercase">staff picks</span>
-                    </div>
-                </div>
-                <div class="col px-2 py-1">
-                    <div class="box">
-                        <img src="../assets/img/premium-recipes.png" alt="">
-                        <span class="text-uppercase">appetisers</span>
-                    </div>
-                </div>
-                <div class="col px-2 py-1">
-                    <div class="box">
-                        <img src="../assets/img/quick-easy-recipes.png" alt="">
-                    <span class="text-uppercase">quick and easy</span>
-                    </div>                    
                 </div>
             </div>
         </div>
