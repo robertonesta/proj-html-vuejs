@@ -44,5 +44,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+p{
+    a{
+        text-decoration: none;
+    }
+    span{
+        color: #0d6efd;
+    }
 
+}
 </style>

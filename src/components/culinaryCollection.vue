@@ -30,5 +30,23 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-    
+.culinaryCollection_section{
+    .col{    
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+         background-color: white;
+            img{
+                margin: 0 auto;
+                width: 100px;
+            }
+            span:hover{
+                color: white;
+                background-color: #fc7525;
+            }
+        }
+    }
+}    
 </style>

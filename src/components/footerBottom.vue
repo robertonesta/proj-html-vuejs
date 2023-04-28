@@ -20,4 +20,17 @@ export default {
 
 <style lang="scss" scoped>
 
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1/1;
+    text-decoration: none;
+    color: white;
+    &:hover{
+        color: #fc7525;
+    }
+}
 </style>

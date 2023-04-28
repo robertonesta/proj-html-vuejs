@@ -51,5 +51,50 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.left_pR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    .img-wrapper{
+        &:hover div{
+            display: flex;          
+        }
+        div{
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            color: white;
+            display: none;
+            background: linear-gradient(180deg, #d5401792,#fc7525);
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                aspect-ratio: 1/1;
+            }
+        }        
+    }
+    .left_pR_text{
+        display: flex;
+        button{
+            background-color: #fc7525;
+            border: none;
+            width: 150px;
+            margin: 1rem 3rem;
+        }
+        hr{
+            border-top: 1px dotted;
+            width: 630px;   
+        }
+    }
 
+}
 </style>
