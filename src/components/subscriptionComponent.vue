@@ -41,6 +41,9 @@ export default {
         padding: 2rem;
         width: 40%;
         margin: auto;
+        h2{
+            font-family: 'Playfair Display', serif;
+        }
         .orangeletter{
             color: #fc7525;
         }

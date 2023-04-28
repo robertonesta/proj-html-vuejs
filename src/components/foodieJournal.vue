@@ -31,6 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .foodiejournal_section{
+    font-family: 'Playfair Display', serif;
     background-color: white;
     margin-top: -3rem;
     margin-bottom: 2rem;

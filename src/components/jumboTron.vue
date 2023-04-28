@@ -60,6 +60,7 @@ export default {
         background-color: white;
         width: 60%;
         margin: auto;
+        font-family: 'Playfair Display', serif;
         
         .jumbo_pin{
             padding: 0 1rem;

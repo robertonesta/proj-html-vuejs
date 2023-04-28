@@ -136,17 +136,18 @@ export default {
         transform: translate(50%, -50%);
         width: 40%;
     }
-.Singapore_text{
-    top: 50%;
-    left: 0%;
-    background-color: rgba(0, 0, 0, 0.718);
-    padding: 0.75rem 1.5rem;
+    .Singapore_text{
+        top: 50%;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.718);
+        padding: 0.75rem 1.5rem;
 }
 .city_guides{
     background-color: #fc7525;
 }
 .orange_text{
     color:#fc7525;
+    font-family: 'Playfair Display', serif;
 }
 .socials_right{
     li{
@@ -157,6 +158,9 @@ export default {
 .popular, .recent{
     border: 1px solid #afafaf;
     font-size: 1.2rem;
+}
+.col-8{
+    font-family: 'Playfair Display', serif;
 }
 .popular_posts{
     img{

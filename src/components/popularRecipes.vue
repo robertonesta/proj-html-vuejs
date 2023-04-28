@@ -45,10 +45,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .left_pR{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Playfair Display', serif;
     .left_pR_text{
         display: flex;
         button{
