@@ -1,0 +1,39 @@
+.footerTop{
+    padding: 5rem 0;
+    background-color: white;
+    .col-3{
+        padding: 0 2.5rem;
+        .socials_right{
+            a{
+                color: grey
+            }
+        }
+    }
+    .dashedborder{
+        border-right: 1px dashed rgb(200, 200, 200);
+    }
+    h6{
+        margin-bottom: 1rem;
+        color: #fc7525;
+    }
+    ul{
+        li{
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+    }
+    .contacts{
+        ul{
+            li{
+                display: flex;
+                align-items: flex-start;
+                font-weight: normal;
+                color: grey;
+                i{
+                    margin-top: 6px;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}

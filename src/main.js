@@ -11,6 +11,9 @@ import {
     faYoutube,
     faPinterest,
   } from '@fortawesome/free-brands-svg-icons'
-  library.add(faFacebook, faInstagram, faTwitter, faYoutube, faPinterest)
+import {
+  faLink
+} from '@fortawesome/free-solid-svg-icons'
+  library.add(faFacebook, faInstagram, faTwitter, faYoutube, faPinterest, faLink)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

@@ -21,11 +21,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.col{
-    padding: 0;
 
-    img{
-       width: 100%;
-    }
-}
 </style>

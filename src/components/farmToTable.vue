@@ -37,7 +37,13 @@
                         <div class="row ">
                             <div class="col-6 my-3 bg-light" v-for="n in store.posts.length - 1">
                                 <div class="box">
-                                    <img :src="`${store.image_path}${store.posts[n].image}`" class="w-100" alt="">
+                                    <div class="img-wrapper position-relative">
+                                        <img :src="`${store.image_path}${store.posts[n].image}`" class="w-100" alt="">
+                                        <div>
+                                            <button class="rounded-circle d-flex justify-content-center align-items-center text-secondary border-0"><font-awesome-icon icon="fa-solid fa-link" /></button>
+                                            <span>{{store.posts[n].title}}</span>                                                        
+                                        </div>
+                                    </div>                                    
                                     <div class="fTT_text p-3">
                                         <h5>{{store.posts[n].title}}</h5>
                                         <p>{{store.posts[n].creator}} | {{store.posts[n].date}}</p>
@@ -120,55 +126,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.farmToTable_section{
-    margin: 3rem auto;
-    .btn{
-        border: none;
-        background-color: #fc7525;
-    }
-    .load_button{
-        background-color: #afafaf;
-    }
-}
-.ad_text{
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%);
-        width: 40%;
-    }
-    .Singapore_text{
-        top: 50%;
-        left: 0%;
-        background-color: rgba(0, 0, 0, 0.718);
-        padding: 0.75rem 1.5rem;
-}
-.city_guides{
-    background-color: #fc7525;
-}
-.orange_text{
-    color:#fc7525;
-    font-family: 'Playfair Display', serif;
-}
-.socials_right{
-    li{
-        border: none;
-        background-color: transparent;
-    }
-}
-.popular, .recent{
-    border: 1px solid #afafaf;
-    font-size: 1.2rem;
-}
-.col-8{
-    font-family: 'Playfair Display', serif;
-}
-.popular_posts{
-    img{
-        border-radius: 50%;
-        width: 55px;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-    }
-}
 
 </style>

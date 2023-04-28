@@ -20,16 +20,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav{
-    ul{
-        justify-content: space-around;
-        margin: auto;
-        width: 60%;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-}
 
 </style>

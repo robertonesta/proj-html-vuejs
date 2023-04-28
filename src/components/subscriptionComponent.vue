@@ -28,35 +28,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.subjumbo_bg{
-    background-color: white;
-    justify-content: center;
-    display: flex;
-    background-image: url(../assets/img/subscribe-sec-bg.png);
-    background-size: cover;
-    background-position: center;
-    height: 650px;
-   
-    .subjumbo_text{
-        padding: 2rem;
-        width: 40%;
-        margin: auto;
-        h2{
-            font-family: 'Playfair Display', serif;
-        }
-        .orangeletter{
-            color: #fc7525;
-        }
-        input{
-            width: 300px;
-        }
-        button{
-            background-color: #fc7525;
-            color: white;
-            margin: 0 1rem;
-            padding: 0.5rem 2rem;          
-        }
-    }
-}
 
 </style>

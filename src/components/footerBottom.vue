@@ -1,7 +1,7 @@
 <template>
     <div class="footer_bottom p-3">
         <div class="d-flex align-items-center justify-content-between">
-            <button type="button" class="btn btn-dark btn-circle"><i class="fa-solid fa-chevron-up"></i></button>
+            <a href="#top" class="bg-dark"><i class="fa-solid fa-chevron-up"></i></a> 
             <span><i class="fa-regular fa-copyright"></i> Copyright 2023 | Nesta Roberto x Avada Food</span>
             <span></span>          
         </div>
@@ -19,9 +19,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-button{
-    border-radius: 50%;
-}
 
 </style>

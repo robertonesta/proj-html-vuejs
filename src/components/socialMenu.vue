@@ -26,15 +26,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container{
-    button{
-        padding: 0.1rem 0.25rem;
-        background-color: #fc7525;
-        border: none;
-    };
-    i{
-        color: grey;
-    }
-}
+
 
 </style>

@@ -7,8 +7,14 @@
         <div class="d-flex justify-content-around py-1">
             <div class="row">
                 <div class="col-6">
-                    <div class="left_pR bg-light flex-column">                        
-                            <img :src="`${store.image_path}${store.recipes[0].image}`" class="w-100" alt="">                        
+                    <div class="left_pR bg-light flex-column"> 
+                        <div class="img-wrapper position-relative">
+                            <img :src="`${store.image_path}${store.recipes[0].image}`" class="w-100" alt=""> 
+                            <div>
+                                <button class="rounded-circle d-flex justify-content-center align-items-center text-secondary border-0"><font-awesome-icon icon="fa-solid fa-link" /></button>
+                                <span>{{store.recipes[0].second_title}}</span>                                
+                            </div>                       
+                        </div>                       
                             <div class="left_pR_text flex-column py-4">
                                 <div class="text-center">
                                     <h4>{{store.recipes[0].title}}</h4>
@@ -45,27 +51,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.left_pR{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Playfair Display', serif;
-    .left_pR_text{
-        display: flex;
-        button{
-            background-color: #fc7525;
-            border: none;
-            width: 150px;
-            margin: 1rem 3rem;
-        }
-        hr{
-            border-top: 1px dotted;
-            width: 630px;   
-        }
-
-    }
-
-}
 
 </style>
