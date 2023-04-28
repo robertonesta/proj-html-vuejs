@@ -15,11 +15,7 @@
                 </div>
                 <div class="col-3 dashedborder">
                     <ul class="list-unstyled">
-                        <li>Recipes</li>
-                        <li>Places</li>
-                        <li>Blog</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li v-for="n in store.navbar.length - 1">{{store.navbar[n].name}}</li>                        
                     </ul>
                 </div>
                 <div class="col-3 dashedborder">

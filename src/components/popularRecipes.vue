@@ -8,28 +8,23 @@
             <div class="row">
                 <div class="col-6">
                     <div class="left_pR bg-light flex-column">                        
-                            <img src="../assets/img/Yogurt-Nan-600x395.jpg" class="w-100" alt="">                        
+                            <img :src="`${store.image_path}${store.recipes[0].image}`" class="w-100" alt="">                        
                             <div class="left_pR_text flex-column py-4">
                                 <div class="text-center">
-                                    <h4>Lunch Favourite with Salad, Naan and Beans</h4>
-                                    <span>Bakery, Featured, Healthy, Latest Recipes, Staff Picks</span>
+                                    <h4>{{store.recipes[0].title}}</h4>
+                                    <span>{{store.recipes[0].second_title}}</span>
                                     <hr>
                                 </div>
-                                <p class="px-5">Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id diam. Vivamus tincidunt eros sed ligula ultricies tincidunt sit amet at mi.</p>
+                                <p class="px-5">{{store.recipes[0].article}}</p>
                                 <button class="btn text-light text-uppercase">learn more</button>
                             </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="row">
-                        <div class="col-6 py-1"><img class="w-100" src="../assets/img/Mixed-fruits-200x132.jpg" alt=""></div>
-                        <div class="col-6 py-1"><img class="w-100" src="../assets/img/r-rachel-park-366508-unsplash-min-200x132.jpg" alt=""></div>
-                        <div class="col-6 py-1"><img class="w-100" src="../assets/img/r-michelle-tsang-500721-unsplash-min-200x132.jpg" alt=""></div>
-                        <div class="col-6 py-1"><img class="w-100" src="../assets/img/quick-summer-drink-460x295.jpg" alt=""></div>
-                        <div class="col-6 py-1"><img class="w-100" src="../assets/img/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg" alt=""></div>
-                        <div class="col-6 py-1"><img class="w-100" src="../assets/img/perfect-cosmopolitan-460x295.jpg" alt=""></div>
-                        <div class="col-6 py-1"><img class="w-100" src="../assets/img/fi2x-6-460x295.jpg" alt=""></div>
-                        <div class="col-6 py-1"><img class="w-100" src="../assets/img/r-brooke-lark-96398-unsplash-min-460x295.jpg" alt=""></div>
+                        <div class="col-6 py-1" v-for="n in store.recipes.length - 1">
+                            <img class="w-100" :src="`${store.image_path}${store.recipes[n].image}`" alt="">
+                        </div>
                     </div>
                 </div>
             </div>

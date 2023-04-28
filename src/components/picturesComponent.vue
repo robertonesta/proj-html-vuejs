@@ -1,11 +1,8 @@
 <template>
     <div class="container-fluid m-0">
         <div class="row">
-            <div class="col d-flex">
-                <img src="../assets/img/Yogurt-Nan-400x263.jpg" alt="">
-                <img src="../assets/img/Mixed-fruits-400x263.jpg" alt="">
-                <img src="../assets/img/r-rachel-park-366508-unsplash-min-400x263.jpg" alt="">
-                <img src="../assets/img/r-michelle-tsang-500721-unsplash-min-400x263.jpg" alt="">
+            <div class="col d-flex" v-for="n in 4">
+                <img class="img-fluid" :src="`${store.image_path}${store.recipes[n - 1].image}`" alt="">
             </div>
         </div>
     </div>
@@ -28,7 +25,7 @@ export default {
     padding: 0;
 
     img{
-       width: 25%;
+       width: 100%;
     }
 }
 </style>
