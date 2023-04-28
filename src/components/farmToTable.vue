@@ -202,5 +202,8 @@ export default {
         object-fit: cover;
     }
 }
-
+.no_style{
+    color: #fc7525;
+    text-decoration: none;
+}
 </style>
