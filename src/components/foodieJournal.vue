@@ -7,21 +7,11 @@
         </div>
         <div class="d-flex text-center justify-content-around">      
             <div class="row">
-                <div class="col-4">
-                    <img src="../assets/img/single-post-img3-400x263.jpg" alt="">
-                    <h6>Food Corner: Top Japanese Restaurants for Sushi</h6>
-                    <p>By Admin | March 25th, 2019</p>
+                <div class="col-4" v-for="n in 3">
+                    <img class="img-fluid" :src="`${store.image_path}${store.posts[n - 1].image}`" alt="">
+                    <h6>{{store.posts[n - 1].title}}</h6>
+                    <p>{{store.posts[n - 1].creator}} | {{store.posts[n - 1].date}}</p>
                 </div>
-                <div class="col-4">
-                    <img src="../assets/img/fi-roundup-400x263.jpg" alt="">
-                    <h6>Roundup: My New Favourite Recipes for Healthy Living</h6>
-                    <p>By Admin | March 25th, 2019</p>
-                </div>
-                <div class="col-4">
-                    <img src="../assets/img/fi-toasts-400x263.jpg" alt="">
-                    <h6>Why These Toasts with Tea are New Favourite</h6>
-                    <p>By Admin | March 25th, 2019</p>
-                </div>              
             </div>                  
         </div>
     </div>
@@ -31,11 +21,11 @@
 import {store} from "../assets/data/store";
 export default {
     name: "foodieJournal",
-    setup () {
+    data () {
         
 
         return {store}
-    }
+    },
 }
 </script>
 

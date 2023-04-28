@@ -83,6 +83,10 @@ export default {
             margin: 0 auto;
             width: 100px;
         }
+        span:hover{
+            color: white;
+            background-color: #fc7525;
+        }
     }
 }
     

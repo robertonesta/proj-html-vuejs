@@ -17,14 +17,14 @@
             <div class="row">
                 <div class="col-8">
                     <div class="left_fTT bg-light flex-column">                        
-                            <img src="../assets/img/single-post-img3-1200x790.jpg" class="w-100" alt="">                        
+                            <img :src="`${store.image_path}${store.posts[0].image}`" class="w-100" alt="">                        
                             <div class="fTT_text flex-column py-4">
                                 <div class="text-center">
-                                    <h4>Food Corner: Top Japanese Restaurants for Sushi</h4>
-                                    <span>By admin | March 25th, 2019</span>
+                                    <h4>{{store.posts[0].title}}</h4>
+                                    <span>{{store.posts[0].creator}} | {{store.posts[0].date}}</span>
                                     <hr>
                                 </div>
-                                <p class="px-5">Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu tellus facilisis nulla, id dignissim orci leo id diam. Vivamus tincidunt eros sed ligula ultricies tincidunt sit amet at mi.</p>
+                                <p class="px-5">{{store.posts[0].article}}</p>
                                 <div class="read_more d-flex align-items-center justify-content-between mx-5">
                                     <div class="left">
                                         <a class="no_style" href="">Read More ></a>
@@ -35,57 +35,12 @@
                     </div>
                     <div class="container text-center py-3">
                         <div class="row ">
-                            <div class="col-6 my-3 bg-light">
+                            <div class="col-6 my-3 bg-light" v-for="n in store.posts.length - 1">
                                 <div class="box">
-                                    <img src="../assets/img/fi-roundup-400x263.jpg" class="w-100" alt="">
+                                    <img :src="`${store.image_path}${store.posts[n].image}`" class="w-100" alt="">
                                     <div class="fTT_text p-3">
-                                        <h5>Roundup: My New Favourite Recipes for Healthy Living</h5>
-                                        <p>By Admin | March 25th, 2019</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 my-3 bg-light">
-                                <div class="box">
-                                    <img src="../assets/img/fi-korean-food-400x263.jpg" class="w-100" alt="">
-                                    <div class="fTT_text p-3">
-                                        <h5>Meal Prep: Korean Bibimbap with Kimchi</h5>
-                                        <p>By Admin | March 25th, 2019</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 my-3 bg-light">
-                                <div class="box">
-                                    <img src="../assets/img/fi-toasts-400x263.jpg" class="w-100" alt="">
-                                    <div class="fTT_text p-3">
-                                        <h5>Why These Toasts with Tea are New Favourite</h5>
-                                        <p>By Admin | March 25th, 2019</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 my-3 bg-light">
-                                <div class="box">
-                                    <img src="../assets/img/fi-street-food-400x263.jpg" class="w-100" alt="">
-                                    <div class="fTT_text p-3">
-                                        <h5>Exploring Street Food in Bangkok</h5>
-                                        <p>By Admin | March 25th, 2019</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col my-3 bg-light">
-                                <div class="box">
-                                    <img src="../assets/img/fi-organic-breakfast-400x263.jpg" class="w-100" alt="">
-                                    <div class="fTT_text p-3">
-                                        <h5>Organic Choices for Healthier Living</h5>
-                                        <p>By Admin | March 25th, 2019</p>    
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 my-3 bg-light">
-                                <div class="box">
-                                    <img src="../assets/img/fi-water-side-rest-400x263.jpg" class="w-100" alt="">
-                                    <div class="fTT_text p-3">
-                                        <h5>5 Waterside Restaurants in Istanbul for Special Events</h5>
-                                        <p>By Admin | March 25th, 2019</p>
+                                        <h5>{{store.posts[n].title}}</h5>
+                                        <p>{{store.posts[n].creator}} | {{store.posts[n].date}}</p>
                                     </div>
                                 </div>
                             </div> 
@@ -129,54 +84,16 @@
                         <button class="popular bg-light w-50 py-3">Popular</button>
                         <button class="recent w-50">Recent</button>
                     </div>
-                    <!--<div class="users">
-                        <ul class="list-unstyled">
-                            <li>
-                                <div v-show="contact.visible" @click="chatUserClick(index)" v-for="(contact, index) in contacts" :class="index === activeContact ? 'active' : ''" class="chat_user p-3 align-items-center">
-                                    <div class="userImg">
-                                        <img :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
-                                    </div>
-                                    <div class="mx-2 d-flex flex-column flex-grow-1">
-                                        <div class="text">{{contact.name}}</div>
-                                        <span class="grey_text">{{lastMessage(contact)}}</span>
-                                    </div> 
-                                    <span class="grey_text">{{lastDate(contact)}}</span>                 
-                                </div>                                
-                            </li>
-                        </ul>
-                    </div>-->
                     <div class="popular_posts">
                         <ul class="list-unstyled">
-                            <li>
+                            <li v-for="n in 3">
                                 <div class="p-2 align-items-center d-flex">
                                     <div class="postImg">
-                                        <img src="../assets/img/single-post-img3-150x150.jpg" alt="">
+                                        <img :src="`${store.image_path}${store.posts[n - 1].image}`" alt="">
                                     </div>
                                     <div class="mx-2 d-flex flex-column flex-grow-1">
-                                        <div class="text"><p>Food Corner: Top Japanese Restaurants for Sushi</p></div>
-                                        <span>March 25th, 2019</span>
-                                    </div>                  
-                                </div>                                
-                            </li>
-                            <li>
-                                <div class="p-2 align-items-center d-flex">
-                                    <div class="postImg">
-                                        <img src="../assets/img/singapore-featured-image-150x150.jpg" alt="">
-                                    </div>
-                                    <div class="mx-2 d-flex flex-column flex-grow-1">
-                                        <div class="text"><p>City Guide: Singapore</p></div>
-                                        <span>March 25th, 2019</span>
-                                    </div>                  
-                                </div>                                
-                            </li>
-                            <li>
-                                <div class="p-2 align-items-center d-flex">
-                                    <div class="postImg">
-                                        <img src="../assets/img/slide1-bg-150x150.jpg" alt="">
-                                    </div>
-                                    <div class="mx-2 d-flex flex-column flex-grow-1">
-                                        <div class="text"><p>6 Nutritional Tips to Helf Burn Body Fat</p></div>
-                                        <span>March 25th, 2019</span>
+                                        <div class="text"><p>{{store.posts[n - 1].title}}</p></div>
+                                        <span>{{store.posts[n - 1].date}}</span>
                                     </div>                  
                                 </div>                                
                             </li>
@@ -248,6 +165,8 @@ export default {
     img{
         border-radius: 50%;
         width: 55px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
     }
 }
 
