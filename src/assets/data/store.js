@@ -190,5 +190,5 @@ export const store = reactive({
             title: "Quick & Easy"
         },
 
-    ],
+    ]
 })

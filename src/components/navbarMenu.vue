@@ -30,6 +30,12 @@ nav{
     a{
         text-decoration: none;
         color: black;
+        i:hover{
+            text-decoration: underline;   
+        }
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 </style>
